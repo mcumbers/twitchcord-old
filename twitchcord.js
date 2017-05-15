@@ -21,7 +21,7 @@ const job = schedule.scheduleJob('/1 * * * * *', () => {
 		for(const stream of config.streams) {
 			console.log(`Checking Twitch ID ${stream.id}`);
 			// Getting stream info from twitch API
-			twitch(`streams/${stream.id}`, config.twitchInfo, (err, twitchResponse) =>{
+			twitch(`streams/${stream.id}`, config.twitchAuth, (err, twitchResponse) =>{
 				if(err){
 					console.log(err);
 					return;
@@ -43,7 +43,7 @@ const job = schedule.scheduleJob('/1 * * * * *', () => {
 				console.log(`Twitch ID ${stream.id} (${stream.nickname}) has started streaming!`);
 
 				// But first we're going to update our config with the info of this stream
-				streams[i].latestStream = twitchRes.stream._id;
+				stream.latestStream = twitchRes.stream._id;
 				jsonfile.writeFile(config, config, (err) => {if(err){console.log(err);}});
 
 				// Patching bug where webhooks won't send if streamer hasn't specified a game on Twitch
