@@ -1,37 +1,37 @@
 {
-	"twitchAuth": {
-		"clientId": "",
-		"apiVersion": 5
-	},
-	"streams": [
-		{
-			"id": "7744499",
-			"nickname": "stickmanmeyhem",
-			"latestStream": 25281971920,
-			"receivers": [
-				{
-					"nickname": "My Test Server",
-					"customMessage": "Hey @everyone! stickmanmeyhem is LIVE on Twitch!",
-					"webhook": ""
-				}
-			]
-		},
-		{
-			"id": "96161915",
-			"nickname": "DooleyNotedGaming",
-			"latestStream": 25281670208,
-			"receivers": [
-				{
-					"nickname": "My Test Server",
-					"customMessage": "Hey <@109004714934300672>! Jeremy's stream started!",
-					"webhook": ""
-				},
-				{
-					"nickname": "Monster Truck Rally",
-					"customMessage": "Hey @everyone! Jeremy's LIVE on Twitch!",
-					"webhook": ""
-				}
-			]
-		}
-	]
+  "twitchAuth": {
+    "clientID": "",
+    "apiVersion": 5
+  },
+  "streams": [
+    {
+      "id": "7744499",
+      "nickname": "stickmanmeyhem",
+      "latestStream": 25283115264,
+      "receivers": [
+        {
+          "nickname": "My Test Server",
+          "customMessage": "Hey @everyone! stickmanmeyhem is LIVE on Twitch!",
+          "webhook": ""
+        }
+      ]
+    },
+    {
+      "id": "96161915",
+      "nickname": "DooleyNotedGaming",
+      "latestStream": 25281670208,
+      "receivers": [
+        {
+          "nickname": "My Test Server",
+          "customMessage": "Hey <@109004714934300672>! Jeremy's stream started!",
+          "webhook": ""
+        },
+        {
+          "nickname": "Monster Truck Rally",
+          "customMessage": "Hey @everyone! Jeremy's LIVE on Twitch!",
+          "webhook": ""
+        }
+      ]
+    }
+  ]
 }

@@ -12,7 +12,7 @@
 	"devDependencies": {
 	},
 	"scripts": {
-		"test": "echo WRITE SOME UNIT TESTS, CHUMP!"
+		"test": "echo I'LL WRITE TESTS WHEN I CARE TO, GOOD SIR"
 	},
 	"author": "Michael Cumbers",
 	"license": "MIT",
