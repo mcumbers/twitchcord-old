@@ -1,0 +1,18 @@
+{
+	"name": "twitchcord",
+	"version": "1.0",
+	"description": "",
+	"main": "twitchcord.js",
+  	"dependencies": {
+    	"jsonfile": "^3.0.0",
+    	"node-rest-client": "^3.1.0",
+    	"node-schedule": "^1.2.1",
+    	"twitch.tv": "^2.1.0"
+  	},
+  	"devDependencies": {},
+  	"scripts": {
+  		"test": "echo \"Error: no test specified\" && exit 1"
+  	},
+  	"author": "Michael Cumbers",
+  	"license": "MIT"
+}
