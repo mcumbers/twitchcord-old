@@ -1,6 +1,6 @@
 {
 	"name": "twitchcord",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Twitch stream notifications on Discord in (usually) less than 60 seconds",
 	"main": "twitchcord.js",
 	"dependencies": {
@@ -11,8 +11,11 @@
 	},
 	"devDependencies": {
 	},
+	"engines": {
+		"node": ">=4.0.0"
+	},
 	"scripts": {
-		"test": "echo I'LL WRITE TESTS WHEN I CARE TO, GOOD SIR"
+		"test": "echo I\'LL WRITE TESTS WHEN I CARE TO, GOOD SIR!"
 	},
 	"author": "Michael Cumbers",
 	"license": "MIT",
