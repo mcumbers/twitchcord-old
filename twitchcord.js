@@ -1,11 +1,10 @@
-const fs = require('fs');
 const Client = require('node-rest-client').Client;
 const schedule = require('node-schedule');
 const twitch = require('twitch.tv');
 const jsonfile = require('jsonfile');
 
 const restClient = new Client();
-const configFile = 'config.json';
+const configFile = "config.json";
 
 const job = schedule.scheduleJob('/1 * * * * *', () => {
 	// This job will run once per minute
@@ -43,8 +42,8 @@ const job = schedule.scheduleJob('/1 * * * * *', () => {
 				console.log(`Twitch ID ${stream.id} (${stream.nickname}) has started streaming!`);
 
 				// But first we're going to update our config with the info of this stream
-				stream.latestStream = twitchRes.stream._id;
-				jsonfile.writeFile(config, config, (err) => {if(err){console.log(err);}});
+				stream.latestStream = twitchResponse.stream._id;
+				jsonfile.writeFile(configFile, config, (err) => {if(err){console.log(err);}});
 
 				// Patching bug where webhooks won't send if streamer hasn't specified a game on Twitch
 				if(!twitchResponse.stream.game){
