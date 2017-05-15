@@ -4,6 +4,7 @@
 	"description": "Twitch stream notifications on Discord in (usually) less than 60 seconds",
 	"main": "twitchcord.js",
 	"dependencies": {
+		"jsonfile": "^3.0.0",
 		"node-rest-client": "^3.1.0",
 		"node-schedule": "^1.2.1",
 		"twitch.tv": "^2.1.0"
@@ -11,7 +12,7 @@
 	"devDependencies": {
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo WRITE SOME UNIT TESTS, CHUMP!"
 	},
 	"author": "Michael Cumbers",
 	"license": "MIT",
