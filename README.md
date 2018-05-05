@@ -2,6 +2,9 @@
 Twitch stream notifications on Discord in (usually) less than 60 seconds
 ------
 
+## This version of twitchcord is now deprecated. 
+## Check [Here](https://github.com/mcumbers/twitchcord) for a version that uses the new twitch API
+
 Originally made by myself for [Jeremy Dooley's Twitch/Discord Community](https://www.twitch.tv/dooleynotedgaming), this handy little node script will check any streams specified once per minute and send a webhook to Discord if they're live.
 
 ![alt text][example]
